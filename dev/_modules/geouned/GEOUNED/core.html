@@ -7,47 +7,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>geouned.GEOUNED.core &#8212; GEOUNED 0.1.dev1+gef80ed2 documentation</title>
+    <title>geouned.GEOUNED.core &#8212; GEOUNED 0.1.dev1+ga5948c1 documentation</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
   
-  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../../_static/documentation_options.js?v=c6d9c122"></script>
-    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/documentation_options.js?v=356e76c2"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_modules/geouned/GEOUNED/core';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.15.2';
-        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/fusion-neutronics/GEOUNED/adding_version_support_to_docs/docs/version_switcher.json';
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/GEOUNED-org/GEOUNED/dev/docs/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.1';
-        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
         </script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1.dev1+ga5948c1" />
   </head>
   
   
@@ -55,31 +60,16 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../../search.html"
       method="get">
@@ -87,7 +77,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search the docs ..."
          aria-label="Search the docs ..."
          autocomplete="off"
@@ -95,43 +84,44 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
-  </label>
+  </button>
   
   
   <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
-<script>
-document.write(`
-  <div class="version-switcher__container dropdown">
-    <button id="pst-version-switcher-button-2"
-      type="button"
-      class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle"
-      data-bs-toggle="dropdown"
-      aria-haspopup="listbox"
-      aria-controls="pst-version-switcher-list-2"
-      aria-label="Version switcher list"
-    >
-      Choose version  <!-- this text may get changed later by javascript -->
-      <span class="caret"></span>
-    </button>
-    <div id="pst-version-switcher-list-2"
-      class="version-switcher__menu dropdown-menu list-group-flush py-0"
-      role="listbox" aria-labelledby="pst-version-switcher-button-2">
-      <!-- dropdown will be populated by javascript on page load -->
-    </div>
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
   </div>
-`);
-</script></div>
+</div></div>
     
-      <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+      <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
         <li class="nav-item">
           
@@ -142,7 +132,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/GEOUNED-org/GEOUNED" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/GEOUNED-org/GEOUNED" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -154,43 +144,36 @@ document.write(`
     <div class="me-auto navbar-header-items__center">
       
         <div class="navbar-item">
-<nav class="navbar-nav">
+<nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../install/index.html">
-                        Install
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../quick_install_guide.html">
+    Quick Install Guide
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../usage/index.html">
-                        Usage
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../python_api.html">
-                        Python API reference
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../users_guide/index.html">
+    Users Guide
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../methodology.html">
-                        Methodology
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../developer_guide.html">
-                        Developer guide
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../python_api.html">
+    Python API reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../developers_guide.html">
+    Developers guide
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -202,31 +185,23 @@ document.write(`
         <div class="navbar-item navbar-persistent--container">
           
 
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
         </div>
       
       
         <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
       
-        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+        <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
         <li class="nav-item">
           
@@ -237,7 +212,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/GEOUNED-org/GEOUNED" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/GEOUNED-org/GEOUNED" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -249,15 +224,11 @@ document.write(`
   
     <div class="navbar-persistent--mobile">
 
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
     </div>
   
 
@@ -274,7 +245,8 @@ document.write(`
       
         
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -283,46 +255,42 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item">
-<nav class="navbar-nav">
+          
+          
+            <div class="navbar-item">
+<nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../install/index.html">
-                        Install
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../quick_install_guide.html">
+    Quick Install Guide
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../usage/index.html">
-                        Usage
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../python_api.html">
-                        Python API reference
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../users_guide/index.html">
+    Users Guide
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../methodology.html">
-                        Methodology
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../../developer_guide.html">
-                        Developer guide
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../python_api.html">
+    Python API reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../developers_guide.html">
+    Developers guide
+  </a>
+</li>
+
   </ul>
 </nav></div>
+          
         
       </div>
     
@@ -332,17 +300,13 @@ document.write(`
         
           <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
         
-          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+          <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
         <li class="nav-item">
           
@@ -353,7 +317,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/GEOUNED-org/GEOUNED" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/GEOUNED-org/GEOUNED" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -364,29 +328,32 @@ document.write(`
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
         <div class="header-article-item">
 
-
-
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -397,7 +364,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">geouned.GEOUNED.core</li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">geouned.GEOUNED.core</span></li>
   </ul>
 </nav>
 </div>
@@ -415,30 +382,29 @@ document.write(`
                 <article class="bd-article">
                   
   <h1>Source code for geouned.GEOUNED.core</h1><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">configparser</span>
-<span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">logging</span>
-<span class="kn">import</span> <span class="nn">typing</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">get_type_hints</span>
-<span class="kn">from</span> <span class="nn">importlib.metadata</span> <span class="kn">import</span> <span class="n">version</span>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">typing</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_type_hints</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">importlib.metadata</span><span class="w"> </span><span class="kn">import</span> <span class="n">version</span>
 
-<span class="kn">import</span> <span class="nn">FreeCAD</span>
-<span class="kn">import</span> <span class="nn">Part</span>
-<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">FreeCAD</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">Part</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tqdm</span><span class="w"> </span><span class="kn">import</span> <span class="n">tqdm</span>
 
-<span class="kn">from</span> <span class="nn">.code_version</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">.conversion</span> <span class="kn">import</span> <span class="n">cell_definition</span> <span class="k">as</span> <span class="n">Conv</span>
-<span class="kn">from</span> <span class="nn">.cuboid.translate</span> <span class="kn">import</span> <span class="n">translate</span>
-<span class="kn">from</span> <span class="nn">.decompose</span> <span class="kn">import</span> <span class="n">decom_one</span> <span class="k">as</span> <span class="n">Decom</span>
-<span class="kn">from</span> <span class="nn">.loadfile</span> <span class="kn">import</span> <span class="n">load_step</span> <span class="k">as</span> <span class="n">Load</span>
-<span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">UF</span>
-<span class="kn">from</span> <span class="nn">.utils.boolean_solids</span> <span class="kn">import</span> <span class="n">build_c_table_from_solids</span>
-<span class="kn">from</span> <span class="nn">.utils.data_classes</span> <span class="kn">import</span> <span class="n">NumericFormat</span><span class="p">,</span> <span class="n">Options</span><span class="p">,</span> <span class="n">Settings</span><span class="p">,</span> <span class="n">Tolerances</span>
-<span class="kn">from</span> <span class="nn">.void</span> <span class="kn">import</span> <span class="n">void</span> <span class="k">as</span> <span class="n">void</span>
-<span class="kn">from</span> <span class="nn">.write.functions</span> <span class="kn">import</span> <span class="n">write_mcnp_cell_def</span>
-<span class="kn">from</span> <span class="nn">.write.write_files</span> <span class="kn">import</span> <span class="n">write_geometry</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.code_version</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.conversion</span><span class="w"> </span><span class="kn">import</span> <span class="n">cell_definition</span> <span class="k">as</span> <span class="n">Conv</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.cuboid.translate</span><span class="w"> </span><span class="kn">import</span> <span class="n">translate</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.decompose</span><span class="w"> </span><span class="kn">import</span> <span class="n">decom_one</span> <span class="k">as</span> <span class="n">Decom</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.loadfile</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_step</span> <span class="k">as</span> <span class="n">Load</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">UF</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.utils.boolean_solids</span><span class="w"> </span><span class="kn">import</span> <span class="n">build_c_table_from_solids</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.utils.data_classes</span><span class="w"> </span><span class="kn">import</span> <span class="n">NumericFormat</span><span class="p">,</span> <span class="n">Options</span><span class="p">,</span> <span class="n">Settings</span><span class="p">,</span> <span class="n">Tolerances</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.void</span><span class="w"> </span><span class="kn">import</span> <span class="n">void</span> <span class="k">as</span> <span class="n">void</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.write.functions</span><span class="w"> </span><span class="kn">import</span> <span class="n">write_mcnp_cell_def</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.write.write_files</span><span class="w"> </span><span class="kn">import</span> <span class="n">write_geometry</span>
 
 <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;general_logger&quot;</span><span class="p">)</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;GEOUNED version </span><span class="si">{</span><span class="n">version</span><span class="p">(</span><span class="s1">&#39;geouned&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -447,12 +413,10 @@ document.write(`
 
 <div class="viewcode-block" id="CadToCsg">
 <a class="viewcode-back" href="../../../python_api.html#geouned.CadToCsg">[docs]</a>
-<span class="k">class</span> <span class="nc">CadToCsg</span><span class="p">:</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">CadToCsg</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Base class for the conversion of CAD to CSG models</span>
 
 <span class="sd">    Args:</span>
-<span class="sd">        stepFile (str, optional): Name of the CAD file (in STEP format) to</span>
-<span class="sd">            be converted. Defaults to &quot;&quot;.</span>
 <span class="sd">        options (geouned.Options, optional): An instance of a geouned.Options</span>
 <span class="sd">            class with the attributes set for the desired conversion. Defaults</span>
 <span class="sd">            to a geouned.Options with default attributes values.</span>
@@ -470,16 +434,14 @@ document.write(`
 <span class="sd">            attributes values.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">stepFile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="n">options</span><span class="p">:</span> <span class="n">Options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">(),</span>
         <span class="n">tolerances</span><span class="p">:</span> <span class="n">Tolerances</span> <span class="o">=</span> <span class="n">Tolerances</span><span class="p">(),</span>
         <span class="n">numeric_format</span><span class="p">:</span> <span class="n">NumericFormat</span> <span class="o">=</span> <span class="n">NumericFormat</span><span class="p">(),</span>
         <span class="n">settings</span><span class="p">:</span> <span class="n">Settings</span> <span class="o">=</span> <span class="n">Settings</span><span class="p">(),</span>
     <span class="p">):</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">stepFile</span> <span class="o">=</span> <span class="n">stepFile</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">options</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">tolerances</span> <span class="o">=</span> <span class="n">tolerances</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">numeric_format</span> <span class="o">=</span> <span class="n">numeric_format</span>
@@ -488,43 +450,35 @@ document.write(`
         <span class="c1"># define later when running the code</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">geometry_bounding_box</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">skip_solids</span> <span class="o">=</span> <span class="p">[]</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">stepFile</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stepFile</span>
-
-    <span class="nd">@stepFile</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">stepFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;geouned.CadToCsg.stepFile should be a str, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_stepFile</span> <span class="o">=</span> <span class="n">value</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">options</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">options</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_options</span>
 
     <span class="nd">@options</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">options</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Options</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">options</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Options</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Options</span><span class="p">):</span>
             <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;geouned.CadToCsg.options should be an instance of geouned.Options, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_options</span> <span class="o">=</span> <span class="n">value</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">tolerances</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">tolerances</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tolerances</span>
 
     <span class="nd">@tolerances</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">tolerances</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">tolerances</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">tolerances</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">tolerances</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Tolerances</span><span class="p">):</span>
             <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;geouned.CadToCsg.tolerances should be an instance of geouned.Tolerances, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_tolerances</span> <span class="o">=</span> <span class="n">value</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">numeric_format</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">numeric_format</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_numeric_format</span>
 
     <span class="nd">@numeric_format</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">numeric_format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">numeric_format</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">numeric_format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">numeric_format</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">NumericFormat</span><span class="p">):</span>
             <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
                 <span class="sa">f</span><span class="s2">&quot;geouned.CadToCsg.numeric_format should be an instance of geouned.NumericFormat, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -532,18 +486,18 @@ document.write(`
         <span class="bp">self</span><span class="o">.</span><span class="n">_numeric_format</span> <span class="o">=</span> <span class="n">value</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">settings</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">settings</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_settings</span>
 
     <span class="nd">@settings</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">settings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">settings</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">settings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">settings</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Settings</span><span class="p">):</span>
             <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;geouned.CadToCsg.settings should be an instance of geouned.Settings, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_settings</span> <span class="o">=</span> <span class="n">value</span>
 
 <div class="viewcode-block" id="CadToCsg.export_csg">
 <a class="viewcode-back" href="../../../python_api.html#geouned.CadToCsg.export_csg">[docs]</a>
-    <span class="k">def</span> <span class="nf">export_csg</span><span class="p">(</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">export_csg</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">title</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;Converted with GEOUNED&quot;</span><span class="p">,</span>
         <span class="n">geometryName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;csg&quot;</span><span class="p">,</span>
@@ -630,7 +584,7 @@ document.write(`
             <span class="n">volCARD</span><span class="o">=</span><span class="n">volCARD</span><span class="p">,</span>
             <span class="n">UCARD</span><span class="o">=</span><span class="n">UCARD</span><span class="p">,</span>
             <span class="n">dummyMat</span><span class="o">=</span><span class="n">dummyMat</span><span class="p">,</span>
-            <span class="n">stepFile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">stepFile</span><span class="p">,</span>
+            <span class="n">step_filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span>
         <span class="p">)</span>
 
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;End of Monte Carlo code translation phase&quot;</span><span class="p">)</span></div>
@@ -639,14 +593,17 @@ document.write(`
 <div class="viewcode-block" id="CadToCsg.from_json">
 <a class="viewcode-back" href="../../../python_api.html#geouned.CadToCsg.from_json">[docs]</a>
     <span class="nd">@classmethod</span>
-    <span class="k">def</span> <span class="nf">from_json</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Creates a CadToCsg instance and returns the instance. Populating the</span>
-<span class="sd">        Options, Tolerance, Settings and NumericFormat attributes from matching</span>
-<span class="sd">        key names in the JSON. If export_to_csg key is present then this method</span>
-<span class="sd">        also runs .start() and .export_to_csg() on the instance.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">from_json</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Creates a CadToCsg instance, runs CadToCsg.load_Step_file(), runs</span>
+<span class="sd">        CadToCsg.start() and returns the instance. Populating the arguments for</span>
+<span class="sd">        the methods that are run by looking for keys with the same name as the</span>
+<span class="sd">        method in the JSON file. For example CadToCsg.start() accepts arguments</span>
+<span class="sd">        for Options, Tolerance, Settings and NumericFormat and can be populated</span>
+<span class="sd">        from matching key names in the JSON. If export_to_csg key is present</span>
+<span class="sd">        then this method also runs CadToCsg.export_to_csg() on the instance.</span>
 
 <span class="sd">        Args:</span>
-<span class="sd">            filename str: The filename of the config file. Defaults to &quot;config.json&quot;.</span>
+<span class="sd">            filename str: The filename of the config file.</span>
 
 <span class="sd">        Raises:</span>
 <span class="sd">            FileNotFoundError: If the config file is not found</span>
@@ -662,10 +619,11 @@ document.write(`
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
-        <span class="n">cad_to_csg</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">stepFile</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;stepFile&quot;</span><span class="p">])</span>
+        <span class="n">cad_to_csg</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">()</span>
+
         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
 
-            <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;stepFile&quot;</span><span class="p">,</span> <span class="s2">&quot;export_csg&quot;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;load_step_file&quot;</span><span class="p">,</span> <span class="s2">&quot;export_csg&quot;</span><span class="p">]:</span>
                 <span class="k">pass</span>  <span class="c1"># these two keys are used before or after this loop</span>
 
             <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s2">&quot;Tolerances&quot;</span><span class="p">:</span>
@@ -682,9 +640,10 @@ document.write(`
 
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-                    <span class="sa">f</span><span class="s2">&quot;Invalid key &#39;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&#39; found in config file </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">. Acceptable key names are &#39;stepFile&#39;, &#39;export_csg&#39;, &#39;Settings&#39;, &#39;Parameters&#39;, &#39;Tolerances&#39; and &#39;NumericFormat&#39;&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;Invalid key &#39;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&#39; found in config file </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">. Acceptable key names are &#39;load_step_file&#39;, &#39;export_csg&#39;, &#39;Settings&#39;, &#39;Parameters&#39;, &#39;Tolerances&#39; and &#39;NumericFormat&#39;&quot;</span>
                 <span class="p">)</span>
 
+        <span class="n">cad_to_csg</span><span class="o">.</span><span class="n">load_step_file</span><span class="p">(</span><span class="o">**</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;load_step_file&quot;</span><span class="p">])</span>
         <span class="n">cad_to_csg</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
         <span class="k">if</span> <span class="s2">&quot;export_csg&quot;</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
             <span class="n">cad_to_csg</span><span class="o">.</span><span class="n">export_csg</span><span class="p">(</span><span class="o">**</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;export_csg&quot;</span><span class="p">])</span>
@@ -693,202 +652,40 @@ document.write(`
         <span class="k">return</span> <span class="n">cad_to_csg</span></div>
 
 
-    <span class="c1"># TODO add tests as set_configuration is not currently tested</span>
-    <span class="k">def</span> <span class="nf">set_configuration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">configFile</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-
-        <span class="k">if</span> <span class="n">configFile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">return</span>
-
-        <span class="n">config</span> <span class="o">=</span> <span class="n">configparser</span><span class="o">.</span><span class="n">ConfigParser</span><span class="p">()</span>
-        <span class="n">config</span><span class="o">.</span><span class="n">optionxform</span> <span class="o">=</span> <span class="nb">str</span>
-        <span class="n">config</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">configFile</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">sections</span><span class="p">():</span>
-            <span class="k">if</span> <span class="n">section</span> <span class="o">==</span> <span class="s2">&quot;Files&quot;</span><span class="p">:</span>
-                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;Files&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                    <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;geometryName&quot;</span><span class="p">,</span> <span class="s2">&quot;matFile&quot;</span><span class="p">,</span> <span class="s2">&quot;title&quot;</span><span class="p">):</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Files&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span>
-
-                    <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s2">&quot;stepFile&quot;</span><span class="p">:</span>
-                        <span class="n">value</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Files&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-                        <span class="n">lst</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-                        <span class="k">if</span> <span class="n">value</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;(&quot;</span><span class="p">,</span> <span class="s2">&quot;[&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">value</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;]&quot;</span><span class="p">,</span> <span class="s2">&quot;)&quot;</span><span class="p">):</span>
-                            <span class="n">data</span> <span class="o">=</span> <span class="n">value</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
-                            <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="p">]</span>
-                            <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-                        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-                            <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">lst</span><span class="p">)</span>
-                        <span class="k">else</span><span class="p">:</span>
-                            <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-
-                    <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s2">&quot;outFormat&quot;</span><span class="p">:</span>
-                        <span class="n">raw</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Files&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-                        <span class="n">values</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">raw</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
-                        <span class="n">outFormat</span> <span class="o">=</span> <span class="p">[]</span>
-                        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-                            <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;mcnp&quot;</span><span class="p">:</span>
-                                <span class="n">outFormat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;mcnp&quot;</span><span class="p">)</span>
-                            <span class="k">elif</span> <span class="n">v</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;openmc_xml&quot;</span><span class="p">:</span>
-                                <span class="n">outFormat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;openmc_xml&quot;</span><span class="p">)</span>
-                            <span class="k">elif</span> <span class="n">v</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;openmc_py&quot;</span><span class="p">:</span>
-                                <span class="n">outFormat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;openmc_py&quot;</span><span class="p">)</span>
-                            <span class="k">elif</span> <span class="n">v</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;serpent&quot;</span><span class="p">:</span>
-                                <span class="n">outFormat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;serpent&quot;</span><span class="p">)</span>
-                            <span class="k">elif</span> <span class="n">v</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;phits&quot;</span><span class="p">:</span>
-                                <span class="n">outFormat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;phits&quot;</span><span class="p">)</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">outFormat</span><span class="p">))</span>
-
-            <span class="k">elif</span> <span class="n">section</span> <span class="o">==</span> <span class="s2">&quot;Parameters&quot;</span><span class="p">:</span>
-                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;Parameters&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                    <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span>
-                        <span class="s2">&quot;voidGen&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;debug&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;compSolids&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;volSDEF&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;volCARD&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;dummyMat&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;cellSummaryFile&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;cellCommentFile&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;sort_enclosure&quot;</span><span class="p">,</span>
-                    <span class="p">):</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">getboolean</span><span class="p">(</span><span class="s2">&quot;Parameters&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span>
-                    <span class="k">elif</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span>
-                        <span class="s2">&quot;minVoidSize&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;maxSurf&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;maxBracket&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;startCell&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;startSurf&quot;</span><span class="p">,</span>
-                    <span class="p">):</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">getint</span><span class="p">(</span><span class="s2">&quot;Parameters&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span>
-                    <span class="k">elif</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;exportSolids&quot;</span><span class="p">,</span> <span class="s2">&quot;UCARD&quot;</span><span class="p">,</span> <span class="s2">&quot;simplify&quot;</span><span class="p">):</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Parameters&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span>
-                    <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s2">&quot;voidMat&quot;</span><span class="p">:</span>
-                        <span class="n">value</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Parameters&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-                        <span class="n">data</span> <span class="o">=</span> <span class="n">value</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
-                    <span class="k">else</span><span class="p">:</span>
-                        <span class="n">value</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Parameters&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-                        <span class="n">data</span> <span class="o">=</span> <span class="n">value</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">)))</span>
-
-            <span class="k">elif</span> <span class="n">section</span> <span class="o">==</span> <span class="s2">&quot;Options&quot;</span><span class="p">:</span>
-                <span class="n">attributes_and_types</span> <span class="o">=</span> <span class="n">get_type_hints</span><span class="p">(</span><span class="n">Options</span><span class="p">())</span>
-                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;Options&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                    <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">attributes_and_types</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                        <span class="k">if</span> <span class="n">attributes_and_types</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">bool</span><span class="p">:</span>
-                            <span class="n">value</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getboolean</span><span class="p">(</span><span class="s2">&quot;Options&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-                        <span class="k">elif</span> <span class="n">attributes_and_types</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">float</span> <span class="ow">or</span> <span class="n">attributes_and_types</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">int</span><span class="p">:</span>
-                            <span class="n">value</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getfloat</span><span class="p">(</span><span class="s2">&quot;Options&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-                        <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-
-            <span class="k">elif</span> <span class="n">section</span> <span class="o">==</span> <span class="s2">&quot;Tolerances&quot;</span><span class="p">:</span>
-                <span class="n">attributes_and_types</span> <span class="o">=</span> <span class="n">get_type_hints</span><span class="p">(</span><span class="n">Tolerances</span><span class="p">())</span>
-                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;Tolerances&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                    <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">attributes_and_types</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                        <span class="k">if</span> <span class="n">attributes_and_types</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">bool</span><span class="p">:</span>
-                            <span class="n">value</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getboolean</span><span class="p">(</span><span class="s2">&quot;Tolerances&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-                        <span class="k">elif</span> <span class="n">attributes_and_types</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">float</span><span class="p">:</span>
-                            <span class="n">value</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getfloat</span><span class="p">(</span><span class="s2">&quot;Tolerances&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-                        <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tolerances</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-
-            <span class="k">elif</span> <span class="n">section</span> <span class="o">==</span> <span class="s2">&quot;MCNP_Numeric_Format&quot;</span><span class="p">:</span>
-                <span class="n">attributes_and_types</span> <span class="o">=</span> <span class="n">get_type_hints</span><span class="p">(</span><span class="n">NumericFormat</span><span class="p">())</span>
-                <span class="n">PdEntry</span> <span class="o">=</span> <span class="kc">False</span>
-                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;MCNP_Numeric_Format&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                    <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">attributes_and_types</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                        <span class="n">value</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;MCNP_Numeric_Format&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-                        <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numeric_format</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s2">&quot;P_d&quot;</span><span class="p">:</span>
-                            <span class="n">PdEntry</span> <span class="o">=</span> <span class="kc">True</span>
-
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;bad section name : </span><span class="si">{</span><span class="n">section</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;geometryName&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;geometryName&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;stepFile&quot;</span><span class="p">][:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span>
-
-        <span class="c1"># TODO see if we can find another way to do this</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">prnt3PPlane</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">PdEntry</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">NumericFormat</span><span class="o">.</span><span class="n">P_d</span> <span class="o">=</span> <span class="s2">&quot;22.15e&quot;</span>
-
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span>
-
-    <span class="c1"># TODO add tests as set is not currently tested</span>
-    <span class="k">def</span> <span class="nf">set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kwrd</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-
-        <span class="k">if</span> <span class="n">kwrd</span> <span class="o">==</span> <span class="s2">&quot;stepFile&quot;</span><span class="p">:</span>
-            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
-                <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">value</span><span class="p">:</span>
-                    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-                        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;elemt in </span><span class="si">{</span><span class="n">kwrd</span><span class="si">}</span><span class="s2"> list should be string&quot;</span><span class="p">)</span>
-                        <span class="k">return</span>
-            <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">kwrd</span><span class="si">}</span><span class="s2"> should be string or tuple of strings&quot;</span><span class="p">)</span>
-                <span class="k">return</span>
-
-        <span class="k">elif</span> <span class="n">kwrd</span> <span class="o">==</span> <span class="s2">&quot;UCARD&quot;</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="s2">&quot;None&quot;</span><span class="p">:</span>
-                <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span>
-            <span class="k">elif</span> <span class="n">value</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
-                <span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">kwrd</span><span class="si">}</span><span class="s2"> value should be None or integer&quot;</span><span class="p">)</span>
-                <span class="k">return</span>
-        <span class="k">elif</span> <span class="n">kwrd</span> <span class="o">==</span> <span class="s2">&quot;outFormat&quot;</span><span class="p">:</span>
-            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="k">return</span>
-        <span class="k">elif</span> <span class="n">kwrd</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;geometryName&quot;</span><span class="p">,</span> <span class="s2">&quot;matFile&quot;</span><span class="p">,</span> <span class="s2">&quot;exportSolids&quot;</span><span class="p">):</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">kwrd</span><span class="si">}</span><span class="s2"> value should be str instance&quot;</span><span class="p">)</span>
-                <span class="k">return</span>
-        <span class="k">elif</span> <span class="n">kwrd</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;cellRange&quot;</span><span class="p">,</span> <span class="s2">&quot;voidMat&quot;</span><span class="p">,</span> <span class="s2">&quot;voidExclude&quot;</span><span class="p">):</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">kwrd</span><span class="si">}</span><span class="s2"> value should be list or tuple&quot;</span><span class="p">)</span>
-                <span class="k">return</span>
-        <span class="k">elif</span> <span class="n">kwrd</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;minVoidSize&quot;</span><span class="p">,</span> <span class="s2">&quot;maxSurf&quot;</span><span class="p">,</span> <span class="s2">&quot;maxBracket&quot;</span><span class="p">,</span> <span class="s2">&quot;startCell&quot;</span><span class="p">,</span> <span class="s2">&quot;startSurf&quot;</span><span class="p">):</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">kwrd</span><span class="si">}</span><span class="s2"> value should be integer&quot;</span><span class="p">)</span>
-                <span class="k">return</span>
-        <span class="k">elif</span> <span class="n">kwrd</span> <span class="ow">in</span> <span class="p">(</span>
-            <span class="s2">&quot;voidGen&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;debug&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;compSolids&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;simplifyCTable&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;volSDEF&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;volCARD&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;dummyMat&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;cellSummaryFile&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;cellCommentFile&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;sort_enclosure&quot;</span><span class="p">,</span>
-        <span class="p">):</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">kwrd</span><span class="si">}</span><span class="s2"> value should be boolean&quot;</span><span class="p">)</span>
-                <span class="k">return</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">kwrd</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
-        <span class="k">if</span> <span class="n">kwrd</span> <span class="o">==</span> <span class="s2">&quot;stepFile&quot;</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;geometryName&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
-            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="nb">tuple</span><span class="p">,</span> <span class="nb">list</span><span class="p">)):</span>
-                <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;geometryName&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;joined_step_files&quot;</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;geometryName&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">value</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span>
-
-    <span class="k">def</span> <span class="nf">_load_step_file</span><span class="p">(</span>
+<div class="viewcode-block" id="CadToCsg.load_step_file">
+<a class="viewcode-back" href="../../../python_api.html#geouned.CadToCsg.load_step_file">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">load_step_file</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-        <span class="c1"># TODO consider having discrete indexes (1,5,7) instead of range (1,7) as this offers more flexibility to the user</span>
-        <span class="n">cell_range</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Union</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">filename</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+        <span class="n">skip_solids</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Load STEP file(s) and extract solid volumes and enclosure volumes.</span>
 
 <span class="sd">        Args:</span>
 <span class="sd">            filename (str): The path to the STEP file or a list of paths to multiple STEP files.</span>
-<span class="sd">            cell_range (tuple[int, int], optional): A tuple representing the range of solids to select from the original STEP solids. Defaults to None.</span>
+<span class="sd">            skip_solids (Sequence[int], optional): A sequence (list or tuple) of indexes of solids to not load for conversion.</span>
 
 <span class="sd">        Returns:</span>
 <span class="sd">            tuple: A tuple containing the solid volumes list and enclosure volumes list extracted from the STEP files.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Start of step file loading phase&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">skip_solids</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;skip_solids should be a list, tuple of ints, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">skip_solids</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">skip_solids</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">entry</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;skip_solids should contain only ints, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;filename should be a str or a sequence of str, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">filename</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">entry</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;filename should contain only str, not a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">skip_solids</span> <span class="o">=</span> <span class="n">skip_solids</span>
 
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
             <span class="n">step_files</span> <span class="o">=</span> <span class="n">filename</span>
@@ -909,15 +706,17 @@ document.write(`
         <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span> <span class="o">=</span> <span class="n">join_meta_lists</span><span class="p">(</span><span class="n">MetaChunk</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">enclosure_list</span> <span class="o">=</span> <span class="n">join_meta_lists</span><span class="p">(</span><span class="n">EnclosureChunk</span><span class="p">)</span>
 
-        <span class="c1"># Select a specific solid range from original STEP solids</span>
-        <span class="k">if</span> <span class="n">cell_range</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span><span class="p">[</span><span class="n">cell_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">cell_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+        <span class="c1"># deleting the solid index in reverse order so the indexes don&#39;t change for subsequent deletions</span>
+        <span class="k">for</span> <span class="n">solid_index</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">skip_solids</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Removing solid index: </span><span class="si">{</span><span class="n">solid_index</span><span class="si">}</span><span class="s2"> from list of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span><span class="p">)</span><span class="si">}</span><span class="s2"> solids&quot;</span><span class="p">)</span>
+            <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span><span class="p">[</span><span class="n">solid_index</span><span class="p">]</span>
 
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;End of step file loading phase&quot;</span><span class="p">)</span>
 
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">enclosure_list</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">enclosure_list</span></div>
 
-    <span class="k">def</span> <span class="nf">_export_solids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_export_solids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Export all the solid volumes from the loaded geometry to a STEP file.</span>
 
 <span class="sd">        Args:</span>
@@ -926,7 +725,7 @@ document.write(`
         <span class="c1"># export in STEP format solids read from input file</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span> <span class="o">==</span> <span class="p">[]:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-                <span class="s2">&quot;No solids in CadToCsg.meta_list to export. Try loading the STEP file first with CadToCsg._load_step_file&quot;</span>
+                <span class="s2">&quot;No solids in CadToCsg.meta_list to export. Try loading the STEP file first with CadToCsg.load_step_file&quot;</span>
             <span class="p">)</span>
         <span class="n">solids</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span><span class="p">:</span>
@@ -935,7 +734,7 @@ document.write(`
             <span class="n">solids</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">Solids</span><span class="p">)</span>
         <span class="n">Part</span><span class="o">.</span><span class="n">makeCompound</span><span class="p">(</span><span class="n">solids</span><span class="p">)</span><span class="o">.</span><span class="n">exportStep</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">_get_geometry_bounding_box</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">padding</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_get_geometry_bounding_box</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">padding</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Get the bounding box of the geometry.</span>
 
@@ -947,10 +746,8 @@ document.write(`
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="c1"># set up Universe</span>
         <span class="n">meta_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">enclosure_list</span><span class="p">:</span>
-            <span class="n">meta_list</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">enclosure_list</span>
 
-        <span class="n">Box</span> <span class="o">=</span> <span class="n">meta_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">BoundBox</span>
+        <span class="n">Box</span> <span class="o">=</span> <span class="n">meta_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">optimalBoundingBox</span><span class="p">()</span>
         <span class="n">xmin</span> <span class="o">=</span> <span class="n">Box</span><span class="o">.</span><span class="n">XMin</span>
         <span class="n">xmax</span> <span class="o">=</span> <span class="n">Box</span><span class="o">.</span><span class="n">XMax</span>
         <span class="n">ymin</span> <span class="o">=</span> <span class="n">Box</span><span class="o">.</span><span class="n">YMin</span>
@@ -960,12 +757,13 @@ document.write(`
         <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">meta_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
             <span class="c1"># MIO. This was removed since in HELIAS the enclosure cell is the biggest one</span>
             <span class="c1"># if m.IsEnclosure: continue</span>
-            <span class="n">xmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">BoundBox</span><span class="o">.</span><span class="n">XMin</span><span class="p">,</span> <span class="n">xmin</span><span class="p">)</span>
-            <span class="n">xmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">BoundBox</span><span class="o">.</span><span class="n">XMax</span><span class="p">,</span> <span class="n">xmax</span><span class="p">)</span>
-            <span class="n">ymin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">BoundBox</span><span class="o">.</span><span class="n">YMin</span><span class="p">,</span> <span class="n">ymin</span><span class="p">)</span>
-            <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">BoundBox</span><span class="o">.</span><span class="n">YMax</span><span class="p">,</span> <span class="n">ymax</span><span class="p">)</span>
-            <span class="n">zmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">BoundBox</span><span class="o">.</span><span class="n">ZMin</span><span class="p">,</span> <span class="n">zmin</span><span class="p">)</span>
-            <span class="n">zmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">BoundBox</span><span class="o">.</span><span class="n">ZMax</span><span class="p">,</span> <span class="n">zmax</span><span class="p">)</span>
+            <span class="n">optBox</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">optimalBoundingBox</span><span class="p">()</span>
+            <span class="n">xmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">optBox</span><span class="o">.</span><span class="n">XMin</span><span class="p">,</span> <span class="n">xmin</span><span class="p">)</span>
+            <span class="n">xmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">optBox</span><span class="o">.</span><span class="n">XMax</span><span class="p">,</span> <span class="n">xmax</span><span class="p">)</span>
+            <span class="n">ymin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">optBox</span><span class="o">.</span><span class="n">YMin</span><span class="p">,</span> <span class="n">ymin</span><span class="p">)</span>
+            <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">optBox</span><span class="o">.</span><span class="n">YMax</span><span class="p">,</span> <span class="n">ymax</span><span class="p">)</span>
+            <span class="n">zmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">optBox</span><span class="o">.</span><span class="n">ZMin</span><span class="p">,</span> <span class="n">zmin</span><span class="p">)</span>
+            <span class="n">zmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">optBox</span><span class="o">.</span><span class="n">ZMax</span><span class="p">,</span> <span class="n">zmax</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">geometry_bounding_box</span> <span class="o">=</span> <span class="n">FreeCAD</span><span class="o">.</span><span class="n">BoundBox</span><span class="p">(</span>
             <span class="n">FreeCAD</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="n">xmin</span> <span class="o">-</span> <span class="n">padding</span><span class="p">,</span> <span class="n">ymin</span> <span class="o">-</span> <span class="n">padding</span><span class="p">,</span> <span class="n">zmin</span> <span class="o">-</span> <span class="n">padding</span><span class="p">),</span>
@@ -973,12 +771,9 @@ document.write(`
         <span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">geometry_bounding_box</span>
 
-    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
         <span class="n">startTime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-
-        <span class="c1"># sets the self.meta_list and self.enclosure_list</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_load_step_file</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">stepFile</span><span class="p">,</span> <span class="n">cell_range</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">settings</span><span class="o">.</span><span class="n">cellRange</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">settings</span><span class="o">.</span><span class="n">exportSolids</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_export_solids</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">settings</span><span class="o">.</span><span class="n">exportSolids</span><span class="p">)</span>
@@ -1106,8 +901,8 @@ document.write(`
                 <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">Definition</span><span class="o">.</span><span class="n">level</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">c</span><span class="o">.</span><span class="n">IsEnclosure</span><span class="p">:</span>
                     <span class="k">continue</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;simplify cell </span><span class="si">{</span><span class="n">c</span><span class="o">.</span><span class="n">__id__</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="n">Box</span> <span class="o">=</span> <span class="n">UF</span><span class="o">.</span><span class="n">get_box</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-                <span class="n">CT</span> <span class="o">=</span> <span class="n">build_c_table_from_solids</span><span class="p">(</span><span class="n">Box</span><span class="p">,</span> <span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">Surfaces</span><span class="p">,</span> <span class="n">Surfs</span><span class="p">),</span> <span class="n">option</span><span class="o">=</span><span class="s2">&quot;full&quot;</span><span class="p">)</span>
+                <span class="n">Box</span> <span class="o">=</span> <span class="n">UF</span><span class="o">.</span><span class="n">get_box</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">enlargeBox</span><span class="p">)</span>
+                <span class="n">CT</span> <span class="o">=</span> <span class="n">build_c_table_from_solids</span><span class="p">(</span><span class="n">Box</span><span class="p">,</span> <span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">Surfaces</span><span class="p">,</span> <span class="n">Surfs</span><span class="p">),</span> <span class="s2">&quot;full&quot;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>
                 <span class="n">c</span><span class="o">.</span><span class="n">Definition</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">CT</span><span class="p">)</span>
                 <span class="n">c</span><span class="o">.</span><span class="n">Definition</span><span class="o">.</span><span class="n">clean</span><span class="p">()</span>
                 <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">Definition</span><span class="o">.</span><span class="n">elements</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">bool</span><span class="p">:</span>
@@ -1182,7 +977,7 @@ document.write(`
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Translation time of solid cells </span><span class="si">{</span><span class="n">tempTime1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">tempTime0</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Translation time of void cells </span><span class="si">{</span><span class="n">tempTime2</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">tempTime1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">_decompose_solids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">meta</span><span class="p">:</span> <span class="nb">bool</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_decompose_solids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">meta</span><span class="p">:</span> <span class="nb">bool</span><span class="p">):</span>
 
         <span class="k">if</span> <span class="n">meta</span><span class="p">:</span>
             <span class="n">meta_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_list</span>
@@ -1252,7 +1047,7 @@ document.write(`
 
 
 
-<span class="k">def</span> <span class="nf">update_comment</span><span class="p">(</span><span class="n">meta</span><span class="p">,</span> <span class="n">idLabel</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">update_comment</span><span class="p">(</span><span class="n">meta</span><span class="p">,</span> <span class="n">idLabel</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">meta</span><span class="o">.</span><span class="n">__commentInfo__</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span>
     <span class="k">if</span> <span class="n">meta</span><span class="o">.</span><span class="n">__commentInfo__</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1261,7 +1056,7 @@ document.write(`
     <span class="n">meta</span><span class="o">.</span><span class="n">set_comments</span><span class="p">(</span><span class="n">void</span><span class="o">.</span><span class="n">void_comment_line</span><span class="p">((</span><span class="n">meta</span><span class="o">.</span><span class="n">__commentInfo__</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">newLabel</span><span class="p">)))</span>
 
 
-<span class="k">def</span> <span class="nf">process_cones</span><span class="p">(</span><span class="n">MetaList</span><span class="p">,</span> <span class="n">coneInfo</span><span class="p">,</span> <span class="n">Surfaces</span><span class="p">,</span> <span class="n">UniverseBox</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">tolerances</span><span class="p">,</span> <span class="n">numeric_format</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">process_cones</span><span class="p">(</span><span class="n">MetaList</span><span class="p">,</span> <span class="n">coneInfo</span><span class="p">,</span> <span class="n">Surfaces</span><span class="p">,</span> <span class="n">UniverseBox</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">tolerances</span><span class="p">,</span> <span class="n">numeric_format</span><span class="p">):</span>
     <span class="n">cellId</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">coneInfo</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
     <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">MetaList</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">__id__</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">cellId</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">m</span><span class="o">.</span><span class="n">Void</span><span class="p">:</span>
@@ -1295,7 +1090,7 @@ document.write(`
             <span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">print_warning_solids</span><span class="p">(</span><span class="n">warnSolids</span><span class="p">,</span> <span class="n">warnEnclosures</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">print_warning_solids</span><span class="p">(</span><span class="n">warnSolids</span><span class="p">,</span> <span class="n">warnEnclosures</span><span class="p">):</span>
 
     <span class="n">solids_logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;solids_logger&quot;</span><span class="p">)</span>
 
@@ -1324,7 +1119,7 @@ document.write(`
         <span class="n">solids_logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">join_meta_lists</span><span class="p">(</span><span class="n">MList</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">List</span><span class="p">[</span><span class="n">UF</span><span class="o">.</span><span class="n">GeounedSolid</span><span class="p">]:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">join_meta_lists</span><span class="p">(</span><span class="n">MList</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">List</span><span class="p">[</span><span class="n">UF</span><span class="o">.</span><span class="n">GeounedSolid</span><span class="p">]:</span>
 
     <span class="n">newMetaList</span> <span class="o">=</span> <span class="n">MList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">MList</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
@@ -1337,7 +1132,7 @@ document.write(`
     <span class="k">return</span> <span class="n">newMetaList</span>
 
 
-<span class="k">def</span> <span class="nf">exclude_cells</span><span class="p">(</span><span class="n">MetaList</span><span class="p">,</span> <span class="n">labelList</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">exclude_cells</span><span class="p">(</span><span class="n">MetaList</span><span class="p">,</span> <span class="n">labelList</span><span class="p">):</span>
     <span class="n">voidMeta</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">MetaList</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">IsEnclosure</span><span class="p">:</span>
@@ -1353,7 +1148,7 @@ document.write(`
     <span class="k">return</span> <span class="n">voidMeta</span>
 
 
-<span class="k">def</span> <span class="nf">sort_enclosure</span><span class="p">(</span><span class="n">MetaList</span><span class="p">,</span> <span class="n">meta_void</span><span class="p">,</span> <span class="n">offSet</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sort_enclosure</span><span class="p">(</span><span class="n">MetaList</span><span class="p">,</span> <span class="n">meta_void</span><span class="p">,</span> <span class="n">offSet</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
 
     <span class="n">newList</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">meta_void</span><span class="p">:</span>
@@ -1427,7 +1222,7 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
 </div>
@@ -1436,8 +1231,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
@@ -1450,8 +1243,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1471,7 +1264,7 @@ document.write(`
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.1.
     <br/>
   </p>
 </div>
@@ -1484,7 +1277,8 @@ document.write(`
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>
